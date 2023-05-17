@@ -14,7 +14,7 @@ jobs:
       - run:
          name: install python
          command: sudo apt update && sudo apt install python3.10 -y && sudo apt install python3-pip && sudo pip install --upgrade pip
-      - run: python3 addition.py
+      - run: python3 .
   flake8:
         working_directory: ~/workspace
         docker:
